@@ -1,10 +1,10 @@
 """""""""""""""""""""""""""""""""""""""
 "Auto
 """""""""""""""""""""""""""""""""""""""
-" Automatically cd into the directory that the file is in
+"Automatically cd into the directory that the file is in
 autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 
-" Automatically remove trailing whitespace in the file
+"Automatically remove trailing whitespace in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 """""""""""""""""""""""""""""""""""""""
@@ -28,9 +28,9 @@ set hlsearch
 "Enable mouse
 set mouse=a
 "Enable line numbers
-set nu 
+set nu
 "Show cursor
-set ruler 
+set ruler
 "Smart char casing
 set smartcase
 "Spacing
