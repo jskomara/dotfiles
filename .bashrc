@@ -7,4 +7,4 @@
 export TERM=xterm-256color
 
 ### aliases
-alias tmux="TERM=xterm-256color tmux"
+#alias tmux="TERM= 256color
