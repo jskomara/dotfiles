@@ -6,6 +6,11 @@
   token = TOKEN
 [core]
   editor = vim
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  lg = log -p
 [color]
   ui = auto
 [color "branch"]
