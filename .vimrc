@@ -4,6 +4,9 @@
 " Automatically cd into the directory that the file is in
 autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 
+" Automatically remove trailing whitespace in the file
+autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
 """""""""""""""""""""""""""""""""""""""
 "Colors
 """""""""""""""""""""""""""""""""""""""
