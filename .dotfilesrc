@@ -1,0 +1,9 @@
+[dotfiles]
+prefix = .
+repository = ~/repos/dotfiles
+ignore = [
+    '.git',
+    '.gitignore',
+    '*.swp'
+    ]
+
