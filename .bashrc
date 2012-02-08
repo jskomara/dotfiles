@@ -33,21 +33,19 @@ NC='\e[0m'              # No Color
 source /etc/bash_completion.d/git
 export PS1='\w$(__git_ps1 "[%s]") > '
 
-username=`whoami`
-
-function get_time_period {
-    hour=$(date +"%k")
-    if [ $hour -lt 12 ]; then
-      echo "Morning"
-    elif [ $hour -ge 12 ] && [ $hour -lt 17 ]; then
-      echo "Afternoon"
-    else
-      echo "Evening"
-    fi
-}
-
-echo -e "$GREEN-######################-"
-echo -e "$YELLOW -Good $(get_time_period) $username-."
-echo -e "$GREEN-######################-"
+#username=`whoami`
+#function get_time_period {
+#    hour=$(date +"%k")
+#    if [ $hour -lt 12 ]; then
+#      echo "Morning"
+#    elif [ $hour -ge 12 ] && [ $hour -lt 17 ]; then
+#      echo "Afternoon"
+#    else
+#      echo "Evening"
+#    fi
+#}
+#echo -e "$GREEN-######################-"
+#echo -e "$YELLOW -Good $(get_time_period) $username-."
+#echo -e "$GREEN-######################-"
 
 tput sgr0
