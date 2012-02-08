@@ -4,6 +4,9 @@ repository = ~/repos/dotfiles
 ignore = [
     '.git',
     '.gitignore',
+    '.gitconfig',
     '*.swp'
     ]
+exclude = [
+  ]
 
