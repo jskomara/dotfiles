@@ -4,8 +4,10 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 ### colors
+
 export TERM=xterm-256color
- #Define a few Color's
+
+#Define a few Color's
  BLACK='\e[0;30m'
  BLUE='\e[0;34m'
  GREEN='\e[0;32m'
@@ -27,7 +29,24 @@ export TERM=xterm-256color
  #${RED}${BASH_VERSION%.*}${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n
 
 ### aliases
+#-------------------------------------------------------------
+# The 'ls' family (this assumes you use a recent GNU ls)
+#-------------------------------------------------------------
+alias ll="ls -l --group-directories-first"
+alias ls='ls -hF --color'  # add colors for filetype recognition
+alias la='ls -Al'          # show hidden files
 
 ### shell
 source /etc/bash_completion.d/git
 export PS1='\w$(__git_ps1 "[%s]") > '
+
+### functions
+#-------------------------------------------------------------
+# File & string-related functions:
+#-------------------------------------------------------------
+
+# Find a file with a pattern in name:
+function ff() { find . -type f -iname '*'$*'*' -ls ; }
+# Count almost-all files by lines of given directory
+function fwc() { ls -A $* | wc -l; }
+
