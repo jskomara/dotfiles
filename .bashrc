@@ -1,12 +1,21 @@
-### Load RVM into a shell session *as a fu    nction*
+### general
+#------------------------------------------------------------
+# Load RVM into a shell session *as a fu    nction*
+#------------------------------------------------------------
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 ### Load RVM function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 ### colors
-
+#-------------------------------------------------------------
+# set colors
+#-------------------------------------------------------------
 export TERM=xterm-256color
+
+#-------------------------------------------------------------
 # Define a few Color's
+#-------------------------------------------------------------
 BLACK='\e[0;30m'
 BLUE='\e[0;34m'
 GREEN='\e[0;32m'
@@ -38,6 +47,8 @@ alias la='ls -Al'          # show hidden files
 ### shell
 source /etc/bash_completion.d/git
 export PS1='\w$(__git_ps1 "[%s]") > '
+#PS1='[\W(__git_ps1 " (%s)")]\$ '
+#export PROMPT_COMMAND='echo -ne "\033]0;{PWD/#$HOME/~}\007"'
 
 ### functions
 #-------------------------------------------------------------
@@ -50,3 +61,5 @@ function ff() { find . -type f -iname '*'$*'*' -ls ; }
 function fwc() { ls -A $* | wc -l; }
 
 #tput sgr0
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
