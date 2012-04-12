@@ -5,7 +5,7 @@
   user = jskomara
   token = TOKEN
 [core]
-  editor = vim
+	editor = vim.basic
 [alias]
   br = branch
   ci = commit
