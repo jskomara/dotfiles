@@ -1,6 +1,7 @@
 ### general
+
 #------------------------------------------------------------
-# Load RVM into a shell session *as a fu    nction*
+# Load RVM into a shell session *as a function*
 #------------------------------------------------------------
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -12,6 +13,7 @@
 # set colors
 #-------------------------------------------------------------
 export TERM=xterm-256color
+#tput sgr0
 
 #-------------------------------------------------------------
 # Define a few Color's
@@ -37,9 +39,7 @@ NC='\e[0m'              # No Color
 #${RED}${BASH_VERSION%.*}${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n
 
 ### aliases
-#-------------------------------------------------------------
-# The 'ls' family (this assumes you use a recent GNU ls)
-#-------------------------------------------------------------
+alias bashrc='vim ~/.bashrc && source ~/.bashrc'
 alias ll="ls -l --group-directories-first"
 alias ls='ls -hF --color'  # add colors for filetype recognition
 alias la='ls -Al'          # show hidden files
@@ -47,6 +47,7 @@ alias la='ls -Al'          # show hidden files
 ### shell
 source /etc/bash_completion.d/git
 export PS1='\w$(__git_ps1 "[%s]") > '
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #PS1='[\W(__git_ps1 " (%s)")]\$ '
 #export PROMPT_COMMAND='echo -ne "\033]0;{PWD/#$HOME/~}\007"'
 
@@ -54,12 +55,9 @@ export PS1='\w$(__git_ps1 "[%s]") > '
 #-------------------------------------------------------------
 # File & string-related functions:
 #-------------------------------------------------------------
-
 # Find a file with a pattern in name:
 function ff() { find . -type f -iname '*'$*'*' -ls ; }
 # Count almost-all files by lines of given directory
 function fwc() { ls -A $* | wc -l; }
 
-#tput sgr0
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
