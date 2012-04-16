@@ -40,9 +40,14 @@ NC='\e[0m'              # No Color
 
 ### aliases
 alias bashrc='vim ~/.bashrc && source ~/.bashrc'
+
 alias ll="ls -l --group-directories-first"
 alias ls='ls -hF --color'  # add colors for filetype recognition
 alias la='ls -Al'          # show hidden files
+
+alias gs='git status'
+alias gd='git diff'
+alias gb='git branch -a -v'
 
 ### shell
 source /etc/bash_completion.d/git
