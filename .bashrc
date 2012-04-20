@@ -76,7 +76,7 @@ source /etc/bash_completion.d/git
 #PS1='[\W(__git_ps1 " (%s)")]\$ '
 #export PROMPT_COMMAND='echo -ne "\033]0;{PWD/#$HOME/~}\007"'
 
-export PS1=$IBLACK$Time12h$Color_Off'$(git branch &>/dev/null;\
+export PS1='\h-\T$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
   echo "$(echo `git status` | grep "nothing to commit" > /dev/null 2>&1; \
   if [ "$?" -eq "0" ]; then \
@@ -88,7 +88,7 @@ if [ $? -eq 0 ]; then \
   fi) '$CYAN$PathShort$Color_Off' "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$CYAN$PathShort$Color_Off' ☇ "; \
+  echo " '$IYELLOW$PathShort$Color_Off' ☇ '$GREEN'"; \
 fi)'
 
 ### functions
