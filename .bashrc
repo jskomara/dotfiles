@@ -85,7 +85,7 @@ if [ $? -eq 0 ]; then \
   else \
     # @5 - Changes to working tree
     echo "'$IRED'"$(__git_ps1 " [%s]⚠  ") ; \
-  fi) '$ICYAN$PathShort$Color_Off' "; \
+  fi) '$CYAN$PathShort$Color_Off' "; \
 else \
   # @2 - Prompt when not in GIT repo
   echo " '$CYAN$PathShort$Color_Off' ☇ "; \
