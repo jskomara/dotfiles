@@ -60,7 +60,7 @@ IWHITE="\[\033[0;97m\]"       # White
 
 ### aliases
 alias brc='vim ~/.bashrc && source ~/.bashrc'
-alias ba='vim ~/.bash/aliases'
+alias ba='vim ~/.bash_aliases'
 
 alias ll="ls -l --group-directories-first"
 alias ls='ls -hF --color'  # add colors for filetype recognition
@@ -85,10 +85,10 @@ if [ $? -eq 0 ]; then \
   else \
     # @5 - Changes to working tree
     echo "'$IRED'"$(__git_ps1 " [%s]⚠  ") ; \
-  fi) '$IYELLOW$PathShort$Color_Off' "; \
+  fi) '$ICYAN$PathShort$Color_Off' "; \
 else \
   # @2 - Prompt when not in GIT repo
-  echo " '$YELLOW$PathShort$Color_Off' ☇  '$IGREEN'"; \
+  echo " '$CYAN$PathShort$Color_Off' ☇ "; \
 fi)'
 
 ### functions
