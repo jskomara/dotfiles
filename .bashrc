@@ -8,15 +8,6 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-### functions
-#-------------------------------------------------------------
-# File & string-related functions:
-#-------------------------------------------------------------
-# Find a file with a pattern in name:
-function ff() { find . -type f -iname '*'$*'*' -ls ; }
-# Count almost-all files by lines of given directory
-function fwc() { ls -A $* | wc -l; }
-
 ### colors
 #-------------------------------------------------------------
 # set colors
