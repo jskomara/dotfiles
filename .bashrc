@@ -22,7 +22,6 @@ function fwc() { ls -A $* | wc -l; }
 # set colors
 #-------------------------------------------------------------
 export TERM=xterm-256color
-#tput sgr0
 
 #-------------------------------------------------------------
 # Define a few Color's
