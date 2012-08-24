@@ -1,9 +1,8 @@
 [user]
-  name = James Komara
-  email = EMAIL
+  name = jskomara
+  email = jskomara@gmail.com
 [github]
   user = jskomara
-  token = TOKEN
 [core]
 	editor = vim.basic
 [alias]
