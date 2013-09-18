@@ -37,7 +37,7 @@ set ruler
 set smartcase
 "Spacing
 set shiftwidth=2
-set softtabstop=2
+set softtabstop=4
 set smarttab
 set expandtab
 "Show doc title
