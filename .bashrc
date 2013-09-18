@@ -27,33 +27,33 @@ export TERM=xterm-256color
 #-------------------------------------------------------------
 # Define a few Color's
 #-------------------------------------------------------------
-BLACK='\e[0;30m'
-BLUE='\e[0;34m'
-GREEN='\e[0;32m'
-CYAN='\e[0;36m'
-RED='\e[0;31m'
-PURPLE='\e[0;35m'
-BROWN='\e[0;33m'
-LIGHTGRAY='\e[0;37m'
-DARKGRAY='\e[1;30m'
-LIGHTBLUE='\e[1;34m'
-LIGHTGREEN='\e[1;32m'
-LIGHTCYAN='\e[1;36m'
-LIGHTRED='\e[1;31m'
-LIGHTPURPLE='\e[1;35m'
-YELLOW='\e[1;33m'
-WHITE='\e[1;37m'
-NC='\e[0m'              # No Color
+BLACK="\[\e[0;30m\]"
+BLUE="\[\e[0;34m\]"
+GREEN="\[\e[0;32m\]"
+CYAN="\[\e[0;36m\]"
+RED="\[\e[0;31m\]"
+PURPLE="\[\e[0;35m\]"
+BROWN="\[\e[0;33m\]"
+LIGHTGRAY="\[\e[0;37m\]"
+DARKGRAY="\[\e[1;30m\]"
+LIGHTBLUE="\[\e[1;34m\]"
+LIGHTGREEN="\[\e[1;32m\]"
+LIGHTCYAN="\[\e[1;36m\]"
+LIGHTRED="\[\e[1;31m\]"
+LIGHTPURPLE="\[\e[1;35m\]"
+YELLOW="\[\e[1;33m\]"
+WHITE="\[\e[1;37m\]"
+NC="\[\e[0m\]" # No Color
 
 # High Intensty
-IBLACK="\[\033[0;90m\]"       # Black
-IRED="\[\033[0;91m\]"         # Red
-IGREEN="\[\033[0;92m\]"       # Green
-IYELLOW="\[\033[0;93m\]"      # Yellow
-IBLUE="\[\033[0;94m\]"        # Blue
-IPURPLE="\[\033[0;95m\]"      # Purple
-ICYAN="\[\033[0;96m\]"        # Cyan
-IWHITE="\[\033[0;97m\]"       # White
+IBLACK="\[\e[0;90m\]"       # Black
+IRED="\[\e[0;91m\]"         # Red
+IGREEN="\[\e[0;92m\]"       # Green
+IYELLOW="\[\e[0;93m\]"      # Yellow
+IBLUE="\[\e[0;94m\]"        # Blue
+IPURPLE="\[\e[0;95m\]"      # Purple
+ICYAN="\[\e[0;96m\]"        # Cyan
+IWHITE="\[\e[0;97m\]"       # White
 
 # Sample Command using color: echo -e "${CYAN}This is BASH
 #${RED}${BASH_VERSION%.*}${CYAN} - DISPLAY on ${RED}$DISPLAY${NC}\n
