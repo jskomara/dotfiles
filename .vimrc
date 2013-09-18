@@ -18,6 +18,7 @@ colorscheme inkpot
 """""""""""""""""""""""""""""""""""""""
 "various, misc
 """""""""""""""""""""""""""""""""""""""
+set linebreak tw=80
 set nocompatible
 "Show commands
 set showcmd
@@ -26,7 +27,8 @@ set autoindent
 "Highlight search results
 set hlsearch
 "Enable mouse
-set mouse=a
+"set mouse=a
+set mouse=r
 "Enable line numbers
 set nu
 "Show cursor

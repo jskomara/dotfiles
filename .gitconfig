@@ -1,11 +1,10 @@
 [user]
-  name = James Komara
-  email = EMAIL
+  name = jskomara
+  email = jskomara@gmail.com
 [github]
   user = jskomara
-  token = TOKEN
 [core]
-	editor = vim.basic
+  editor = vim.basic
 [alias]
   br = branch
   ci = commit
@@ -13,6 +12,7 @@
   lg = log -p
 [color]
   ui = auto
+  diff = auto
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -21,5 +21,3 @@
   added = yellow
   changed = green
   untracked = cyan
-
-
