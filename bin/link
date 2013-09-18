@@ -1,0 +1,23 @@
+#!/bin/bash
+# .make.sh
+# symlink -> dotfiles
+
+dir=~/dotfiles
+olddir=~/dotfiles_old
+# files_not_linked="gitignore git"
+files="bashrc vim autotest bash_profile dotfilesrc gemrc gitconfig tmux.conf vimrc"
+
+echo "Create $olddir for backup"
+mkdir -p $olddir
+echo "done"
+
+echo "change to $dir"
+cd $dir
+echo "done"
+
+for file in $files; do
+  echo "Moving any existing dotfiles from ~ to $olddir"
+  mv ~/.$file ~/dotfiles_old/
+  echo "create symlink to $file in home"
+  ln -s $dir/$file ~/.$file
+done

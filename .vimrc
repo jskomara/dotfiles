@@ -8,6 +8,11 @@ autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 """""""""""""""""""""""""""""""""""""""
+"Plugins
+"""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
+
+"""""""""""""""""""""""""""""""""""""""
 "Colors
 """""""""""""""""""""""""""""""""""""""
 set t_Co=256
@@ -18,6 +23,7 @@ colorscheme inkpot
 """""""""""""""""""""""""""""""""""""""
 "various, misc
 """""""""""""""""""""""""""""""""""""""
+set linebreak tw=80
 set nocompatible
 "Show commands
 set showcmd
@@ -26,7 +32,8 @@ set autoindent
 "Highlight search results
 set hlsearch
 "Enable mouse
-set mouse=a
+"set mouse=a
+set mouse=r
 "Enable line numbers
 set nu
 "Show cursor

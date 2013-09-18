@@ -6,7 +6,7 @@
 ### Load RVM function
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### functions
 #-------------------------------------------------------------
@@ -43,7 +43,7 @@ LIGHTRED="\[\e[1;31m\]"
 LIGHTPURPLE="\[\e[1;35m\]"
 YELLOW="\[\e[1;33m\]"
 WHITE="\[\e[1;37m\]"
-NC="\[\e[0m\]" # No Color
+NOCOLOR="\[\e[0m\]"
 
 # High Intensty
 IBLACK="\[\e[0;90m\]"       # Black
@@ -90,12 +90,3 @@ else \
   # @2 - Prompt when not in GIT repo
   echo " '$IYELLOW$PathShort$Color_Off' ☇ '$GREEN'"; \
 fi)'
-
-### functions
-#-------------------------------------------------------------
-# File & string-related functions:
-#-------------------------------------------------------------
-# Find a file with a pattern in name:
-function ff() { find . -type f -iname '*'$*'*' -ls ; }
-# Count almost-all files by lines of given directory
-function fwc() { ls -A $* | wc -l; }
