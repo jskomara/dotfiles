@@ -43,7 +43,7 @@ LIGHTRED="\[\e[1;31m\]"
 LIGHTPURPLE="\[\e[1;35m\]"
 YELLOW="\[\e[1;33m\]"
 WHITE="\[\e[1;37m\]"
-NC="\[\e[0m\]" # No Color
+NOCOLOR="\[\e[0m\]"
 
 # High Intensty
 IBLACK="\[\e[0;90m\]"       # Black
