@@ -65,11 +65,14 @@ alias ba='vim ~/.bash_aliases'
 alias ll="ls -l --group-directories-first"
 alias ls='ls -hF --color'  # add colors for filetype recognition
 alias la='ls -Al'          # show hidden files
+alias ..='cd ..'
 
 alias gs='git status'
 alias gd='git diff'
 alias gb='git branch -a -v'
 
+#globally change strings in files
+#e.g. gchange s,/old/path/perl,/new/path/perl,g
 alias gchange "find . -type f -print | xargs \
 perl -pi.bak -e '\!1'"
 
