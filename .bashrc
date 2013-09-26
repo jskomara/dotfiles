@@ -70,6 +70,9 @@ alias gs='git status'
 alias gd='git diff'
 alias gb='git branch -a -v'
 
+alias gchange "find . -type f -print | xargs \
+perl -pi.bak -e '\!1'"
+
 ### shell
 source /etc/bash_completion.d/git
 #export PS1='\w$(__git_ps1 "[%s]") > '
