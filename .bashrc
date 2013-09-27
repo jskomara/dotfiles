@@ -73,7 +73,7 @@ alias gb='git branch -a -v'
 
 #globally change strings in files
 #e.g. gchange s,/old/path/perl,/new/path/perl,g
-alias gchange "find . -type f -print | xargs \
+alias gchange="find . -type f -print | xargs \
 perl -pi.bak -e '\!1'"
 
 ### shell
